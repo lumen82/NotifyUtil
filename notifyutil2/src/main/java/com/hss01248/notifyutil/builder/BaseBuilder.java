@@ -218,6 +218,11 @@ public class BaseBuilder {
 		 */
         cBuilder.setPriority(priority);
 
+	/*
+	 *          * 设置通知的提示音为系统默认消息提示音
+	 *                   */
+       Uri alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+       cBuilder.setSound(alarmSound);
         //int defaults = 0;
 
         if (sound) {
